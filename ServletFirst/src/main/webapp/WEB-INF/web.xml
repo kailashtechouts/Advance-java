@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Servlet4</display-name>
+  
+  <!-- Servlet declartion -->
+  
+  <welcome-file-list>
+  <welcome-file>Home.html</welcome-file>
+  <welcome-file>Sum.html</welcome-file>
+  </welcome-file-list>
+ 
+ <servlet>
+  		<servlet-name>first</servlet-name>
+  		<servlet-class>org.sample.Test</servlet-class>
+  </servlet>
+  
+   <servlet>
+  		<servlet-name>second</servlet-name>
+  		<servlet-class>org.sample.Test2</servlet-class>
+  </servlet>
+  
+   <servlet>
+  		<servlet-name>third</servlet-name>
+  		<servlet-class>org.sample.Adding</servlet-class>
+  </servlet>
+  
+  <servlet>
+  		<servlet-name>register</servlet-name>
+  		<servlet-class>org.sample.RegisterServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  		<servlet-name>success</servlet-name>
+  		<servlet-class>org.sample.SuccessServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  		<servlet-name>track1</servlet-name>
+  		<servlet-class>org.sample.Servlet1</servlet-class>
+  </servlet>
+  
+  <servlet>
+  		<servlet-name>track2</servlet-name>
+  		<servlet-class>org.sample.Servlet2</servlet-class>
+  </servlet>
+  
+  <!-- mapping -->
+  
+  <servlet-mapping>
+  			<servlet-name>first</servlet-name>
+  			<url-pattern>/web</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  			<servlet-name>second</servlet-name>
+  			<url-pattern>/genericweb</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  			<servlet-name>third</servlet-name>
+  			<url-pattern>/Adding</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  			<servlet-name>register</servlet-name>
+  			<url-pattern>/Registerservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  			<servlet-name>success</servlet-name>
+  			<url-pattern>/success</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  			<servlet-name>track1</servlet-name>
+  			<url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  			<servlet-name>track2</servlet-name>
+  			<url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+</web-app>

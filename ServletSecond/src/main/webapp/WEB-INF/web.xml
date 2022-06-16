@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+
+<!--  description   -->
+<servlet>  
+    
+    <display-name>ServletLogin</display-name>  
+    <servlet-name>ServletLogin</servlet-name>  
+    <servlet-class>org.sample1.ServletLogin</servlet-class>  
+  </servlet>  
+  
+  <servlet>   
+    <display-name>AccountServlet</display-name>  
+    <servlet-name>AccountServlet</servlet-name>  
+    <servlet-class>org.sample1.AccountServlet</servlet-class>  
+  </servlet>  
+  
+  <servlet>  
+    <display-name>ServletLogout</display-name>  
+    <servlet-name>ServletLogout</servlet-name>  
+    <servlet-class>org.sample1.ServletLogout</servlet-class>  
+  </servlet>  
+  
+  <servlet>   
+    <servlet-name>HiddenServlet1</servlet-name>  
+    <servlet-class>org.sample1.HiddenServlet1</servlet-class>  
+  </servlet>  
+  
+  <servlet>   
+    <servlet-name>HiddenServlet2</servlet-name>  
+    <servlet-class>org.sample1.HiddenServlet2</servlet-class>  
+  </servlet>  
+  
+   <servlet>   
+    <servlet-name>URL1</servlet-name>  
+    <servlet-class>org.sample1.URL1</servlet-class>  
+  </servlet>  
+  
+   <servlet>   
+    <servlet-name>URL2</servlet-name>  
+    <servlet-class>org.sample1.URL2</servlet-class>  
+  </servlet>  
+  
+   <servlet>   
+    <servlet-name>HTTPS1</servlet-name>  
+    <servlet-class>org.sample1.HTTPSession1</servlet-class>  
+  </servlet>  
+  
+   <servlet>   
+    <servlet-name>HTTPS2</servlet-name>  
+    <servlet-class>org.sample1.HTTPSession2</servlet-class>  
+  </servlet>  
+  
+  <!-- mapping  -->
+  
+  <servlet-mapping>  
+    <servlet-name>ServletLogin</servlet-name>  
+    <url-pattern>/ServletLogin</url-pattern>  
+  </servlet-mapping>  
+  
+  <servlet-mapping>  
+    <servlet-name>AccountServlet</servlet-name>  
+    <url-pattern>/AccountServlet</url-pattern>  
+  </servlet-mapping>  
+  
+  <servlet-mapping>  
+    <servlet-name>ServletLogout</servlet-name>  
+    <url-pattern>/ServletLogout</url-pattern>  
+  </servlet-mapping>
+    
+  <servlet-mapping>  
+    <servlet-name>HiddenServlet1</servlet-name>  
+    <url-pattern>/servlet1</url-pattern>  
+  </servlet-mapping>  
+  
+  <servlet-mapping>  
+    <servlet-name>HiddenServlet2</servlet-name>  
+    <url-pattern>/servlet2</url-pattern>  
+  </servlet-mapping> 
+  
+  <servlet-mapping>  
+    <servlet-name>URL1</servlet-name>  
+    <url-pattern>/urls1</url-pattern>  
+  </servlet-mapping> 
+  
+  <servlet-mapping>  
+    <servlet-name>URL2</servlet-name>  
+    <url-pattern>/urls2</url-pattern>  
+  </servlet-mapping>  
+  
+   <servlet-mapping>  
+    <servlet-name>HTTPS1</servlet-name>  
+    <url-pattern>/https1</url-pattern>  
+  </servlet-mapping>  
+  
+   <servlet-mapping>  
+    <servlet-name>HTTPS2</servlet-name>  
+    <url-pattern>/https2</url-pattern>  
+  </servlet-mapping>  
+  
+  
+</web-app>
